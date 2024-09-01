@@ -1,0 +1,47 @@
+.wrapper {
+    border: 1px solid #e9ecef;
+    padding: 2rem;
+    background-color: #005f8f
+}
+
+.wrapper h1 {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: .4rem 0;
+}
+
+.inputField {
+    color: #000000;
+    text-align: center;
+    padding: .5rem 0 .5rem 0;
+}
+
+ul.todoList li.done {
+    text-decoration: line-through;
+}
+
+div.inputField button {
+    color: #000000
+}
+
+.wrapper li {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: .7rem;
+    border-bottom: 1px solid #e9ecef;
+    display: table;
+    border-collapse: separate;
+    border-spacing: .5rem;
+}
+
+div.wrapper button.deleteBtn {
+    color: #000000;
+    margin-left: .5rem;
+}
+
+.footer {
+    color: #fff;
+    text-decoration: underline;
+    text-align: center;
+}
