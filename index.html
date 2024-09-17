@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
-    <title>Todo Data Model</title>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Basic Todo App</title>
 </head>
 <body>
     <div class="wrapper">
-        <header><h1>Todo List</h1></header>
+        <header>
+            <h1>Todo List</h1>
+        </header>
         <div class="inputField">
-          <input type="text" placeholder="Enter new task" />
-          <button>Add</button>
+            <input type="text" placeholder="Enter new task" />
+            <button>Add</button>
         </div>
-        <ul class="todoList"> <!-- Make the list items a input type="checkbox" then classes with li.done styled with a css linethrough -->
-          <li class="done">
-            Todo Item 1 <span><button class="deleteBtn">Delete</button></span>
-          </li>
-          <li>
-            Todo Item 2
-            <span><button class="editBtn">Edit</button></span>
-            <span><button class="deleteBtn">Delete</button></span>
-          </li>
+        <ul class="todoList">
+            <li class="todo-item">
+                <input type="checkbox" class="todo-checkbox" />
+                <span class="todo-text">Sample Todo</span>
+                <button class="todo-edit-btn">Edit</button>
+                <button class="todo-delete-btn">Delete</button>
+            </li>
         </ul>
         <div class="footer">
-          <!-- Adjust the pending # so it references a js variable -->
-          <span>You have 1 pending task.</span>
-          <button>Clear Done</button>
-        </div>
+            <span id="pendingTasks"></span>
+            <button class="clearCompletedButton">Clear Completed Todos</button>
+        </div>        
     </div>
     <script src="./script.js" type="module"></script>
 </body>
