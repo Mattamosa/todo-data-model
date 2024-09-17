@@ -131,3 +131,5 @@ clearCompletedButton.addEventListener("click", clearCompletedTodos);
 
 // Render on page load
 renderTodos();
+
+console.log(todos);
